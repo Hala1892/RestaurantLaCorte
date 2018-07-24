@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metas and title -->
+    <meta charset="utf-8">
+    <title>Пицария La Corte Dei Mangioni - Съдът на чревоугодниците</title>
+    <meta name="description" content="Ресторант - Пицария">
+    <meta name="keywords" content="пица, Възраждане, Варна, пицария, италианска, храна, ресторант">
+    <meta name="author" content="webtzar.com">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Lightbox -->
+    <link href='js/simplelightbox/simplelightbox.css' rel='stylesheet' type='text/css'>
+    <!-- Gallery -->
+    <link rel="stylesheet" href="js/jQuery-flexImages/jquery.flex-images.css">
+    <!-- Slider -->
+    <link rel="stylesheet" href="js/superslides/superslides.css">
+    <!-- Main one -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- Contacts Icons -->
+    <div class="social-icons">
+        <div class="phone"><a href="tel:+359894311108" data-toggle="modal" data-target="#reservationModal"><img src="http://comercialsanitaria.com.mx/wp-content/uploads/2017/07/icono-telefono.png" alt=""><span class="tooltiptext">Направи резервация</span></a></div>
+        <div class="facebook"><a target="_blank" rel="noopener noreferrer" href="https://facebook.com"><img src="http://store-images.s-microsoft.com/image/apps.25377.13510798887580439.d9078246-daa3-4682-8462-12dbfca9e0d4.136a3fcf-4edc-4af6-a944-cda1438abd1e" alt=""><span class="tooltiptext">Харесай ни!</span></a></div>
+        <div class="delivery"><a href="tel:+359894311108" data-toggle="modal" data-target="#deliveryModal"><img src="http://www.iconsplace.com/icons/preview/white/delivery-256.png" alt=""><span class="tooltiptext">Доставка до дома</span></a></div>
+    </div>
+    <!-- Modal -->
+<div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                <div id="fh5co-contact" data-section="reservation">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-lg-6 col-md-7 col-md-offset-0 col-sm-9 col-xs-12">
+                                    <h2 class="heading to-animate">Резервирай маса</h2>
+                                    <p class="sub-heading to-animate">Резервирай маса при нас с помощта на формата по-долу или ни позвънни на <a href="tel:+359894311108"><span class="phone-number">+359 884 923 477</span></a><br>Благодарим ви!</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-7 col-md-offset-0 col-sm-9">
+                                    <div class="form-group ">
+                                        <label for="name" class="sr-only">Име</label>
+                                        <input id="name" class="form-control" placeholder="Вашето име" type="text">
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="email" class="sr-only">Е-мейл</label>
+                                        <input id="email" class="form-control" placeholder="Е-мейл" type="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="occation" class="sr-only">Повод</label>
+                                        <select class="form-control" id="occation">
+                                            <option>Повод за събиране</option>
+                                          <option>Сватба</option>
+                                          <option>Рожден ден</option>
+                                          <option>Фирмено парти</option>
+                                          <option>Друго</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="date" class="sr-only">Дата и час</label>
+                                        <input id="date" class="form-control" placeholder="Дата &amp; Time" type="text">
+                                    </div>
+            
+            
+                                        
+                                    <div class="form-group ">
+                                        <label for="message" class="sr-only">Съобщение</label>
+                                        <textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Съобщение"></textarea>
+                                    </div>
+                                    <div class="form-group ">
+                                        <input class="btn btn-primary" value="Изпрати" type="submit">
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    
+                </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- Modal -->
+  <div class="modal fade" id="deliveryModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                  <div id="fh5co-contact" data-section="reservation">
+                          <div class="container">
+                              <div class="row text-center">
+                                  <div class="col-lg-6 col-md-7 col-md-offset-0 col-sm-9 col-xs-12">
+                                      <h2 class="heading to-animate">Доставка по домовете</h2>
+                                      <p class="sub-heading to-animate">Възползвайте се от бързата ни доставка до прага на дома ви.Изпратете ни вашата поръчка чрез формата по-долу
+                                          или ни се обадете на телефона ни за поръчки: 
+                                          <a href="tel:+359894311108"><span class="phone-number">+359 884 923 477</span></a><br>Благодарим ви!</p></div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-lg-6 col-md-7 col-md-offset-0 col-sm-9">
+                                      <div class="form-group ">
+                                          <label for="name" class="sr-only">Име</label>
+                                          <input id="name" class="form-control" placeholder="Вашето име" type="text">
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="email" class="sr-only">Е-мейл</label>
+                                          <input id="email" class="form-control" placeholder="Е-мейл" type="email">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="occation" class="sr-only">Адрес</label>
+                                          <input id="adress" class="form-control" placeholder="Адрес" type="adress">
+                                      </div>   
+                                      <div class="form-group ">
+                                          <label for="message" class="sr-only">Поръчка</label>
+                                          <textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Поръчка"></textarea>
+                                      </div>
+                                      <div class="form-group ">
+                                            <label for="message" class="sr-only">Допълнителни изисквания</label>
+                                            <textarea name="" id="message" cols="10" rows="2" class="form-control" placeholder="Допълнителни изисквания"></textarea>
+                                        </div>
+                                      <div class="form-group ">
+                                          <input class="btn btn-primary" value="Изпрати" type="submit">
+                                      </div>
+                                      </div>
+                              </div>
+                          </div>
+                      </div>
+              
+                      
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Navbar -->
+<div class="off-canvas-menu">
+      <nav id="navbar" class="navbar navbar-default navbar-fixed-top header-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Навигация</span> Меню <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <span style="color: #24e244;">La Corte</span><span style="color: #c4c4c4"> dei </span>
+                    <span style="color: #ff2e23;">Mangioni</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll active" href="#home">Начало</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">За Нас</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#our-menu">Меню</a>
+                    </li>
+                                        <li>
+                        <a class="page-scroll" href="#gallery">Галерия</a>
+                    </li>
+                                        <li>
+                        <a class="page-scroll" href="#promos">Оферти</a>
+                    </li>
+                                        <li>
+                        <a class="page-scroll" href="#contact">Контакт с нас</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main body -->
+    <div id="container">
+    <!-- Home Secton -->
+        <section id="home">
+    <!-- Slider -->
+            <ul class="slides-container">
+                <li>
+                    <img src="images/slides/slide1.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2>
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/slides/slide2.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2>
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/slides/slide4.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2>
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/slides/slide5.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2> 
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/slides/slide222222.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2>
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/slides/slide3.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2>
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/slides/slide33.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2>
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- About us section -->
+        <section id="about" class="container-fluid">
+            <div class="photo-container  col-lg-4 hidden-sm hidden-xs divider-background p-l-n">
+                <div class="background-image-holder">
+                    <img src="images/pizza-start.png" alt="" style="display:none">
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 history pull-right">
+                        <h2>За нас</h2>
+                        <p>Обожавате италианската кухня? Ако за вас тя е нещо повече от рецепта 
+                        за тесто с доматено пюре, преоткрийте я, както никога до сега при нас в "La Corte dei Mangioni" и 
+                        направете този подарък към всичките ви вкусове и възприятия.
+                        Очите ви ще заблещукат, краката ви ще омекнат, а небцето ви ще пощурее от радост и наслада.
+                        </p>
+
+                        <p>Не случайно е и името на ресторанта La Corte dei Mangioni - Съдът на чревоугодниците.
+                        Оригинално от Палермо, Италия,  нашата цел не е да сме поредната квартална пицария.
+                        Искаме да предоставим на нашите гости усещането за истинска, първокласна италианска храна
+                        с цялото и разнообразие и красота, както и грамаж, разбира се.Предлагаме ви възхитителна комбинация между
+                        традиционната италианска кухня и модерното кулинарно изкуство.Заповядайте в "La Corte dei Mangioni", за да си угодите по италиански
+                        с приятелско обслужване, семейна атмосфера и преоткриване на нови любими вкусове.Очакваме ви!
+                        </p>
+                    </div>
+                 </div>
+            </div>
+        </section>
+        
+        <!-- Our Menu section -->
+        <section id="our-menu">
+            <div class="container">
+                <h2>Меню</h2>
+                <div class="menu-table">
+                    <!-- Menu tabs -->
+                    <ul class="nav nav-tabs  menu-tabs" role="tablist">
+                        <li class="active">
+                            <a href="#bruschetti" aria-controls="bruschetti" role="tab" data-toggle="tab" class="icon icon-home"><span>Брускети и антипасти</span></a>
+                        </li>
+                        <li>
+                            <a href="#soups" aria-controls="soups" role="tab" data-toggle="tab">Супи</a>
+                        </li>
+                        <li>
+                            <a href="#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab">Предястия</a>
+                        </li>
+                        <li>
+                            <a href="#pizzas" aria-controls="pizzas" role="tab" data-toggle="tab">Пици</a>
+                        </li>
+                        <li>
+                            <a href="#bbq" aria-controls="bbq" role="tab" data-toggle="tab">Скара</a>
+                        </li>
+                        <li>
+                            <a href="#desserts" aria-controls="desserts" role="tab" data-toggle="tab">Десерти</a>
+                        </li>
+                    </ul>
+
+<!--============================== BRUSCHETTI =====================================-->
+
+                    <div class="tab-content">
+                        <div class="tab-pane active fade in" id="bruschetti">
+                            <div class="row">
+                                <div class="menu-group">
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/brusketi/1.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Брускета с чери домати и рикота</span>
+                                            <span class="menu-descp">чери домати, босилек, хляб, рикота, зехтин, чесън</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <span class="menu-item-price">
+                                                5.69 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/brusketi/2.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Брускета с пармска шунка и смокини</span>
+                                            <span class="menu-descp">смокини, прошуто, джоджен, хляб, зехтин, козе сирене, Рукола</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <span class="menu-item-price">
+                                                3.59 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/brusketi/3.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Брускета с аншоа и маслини</span>
+                                            <span class="menu-descp">хляб, магданоз, Зехтин, аншоа, каперси, маслини</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <span class="menu-item-price">
+                                                3.59 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/brusketi/4.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Брускета с пушена сьомга, крема сирене и рукола</span>
+                                            <span class="menu-descp">крема сирене, лук, лимонов сок, горчица, каперси, хляб, рукола, пушена сьомга</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <span class="menu-item-price">
+                                                5.59 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/brusketi/5.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Брускета с манатарки и пармезан</span>
+                                            <span class="menu-descp">манатарка, хляб, сол, черен пипер, сок от лимон, розмарин, мащерка, лук, чери домати, рукола</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <span class="menu-item-price">
+                                                6.59 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/brusketi/6.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Карпачо от говеждо филе</span>
+                                            <span class="menu-descp">Гов.филе,рукола,каперси,зехтин,пармезан</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <span class="menu-item-price">
+                                                2.39 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+<!--============================== SOUPS =====================================-->
+
+                        <div class="tab-pane fade " id="soups">
+                            <div class="row">
+                                <div class="menu-group">
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/1.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Рибена супа "Буябес"</span>
+                                            <span class="menu-descp">скариди, черен пипер, дафинов лист, зехтин, копър, лук, праз, чесън, домати, сьомга, треска, миди, лют червен пипер, риган, мащерка, хляб, картофи</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                11.59 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/2.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Супа "Гулаш"</span>
+                                            <span class="menu-descp">говеждо, сладък червен пипер, бульон, картофи, пащърнак, морков, домат, целина, зелена чушка, магданоз, заквасена сметана</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                9.98 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/3.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Супа "Минестрони"</span>
+                                            <span class="menu-descp">зехтин, праз, моркови, тиквички, зелен боб, целина, зеленчуков бульон, домати, мащерка, боб, макарони</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                5.68 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/4.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Пилешка бистра</span>
+                                            <span class="menu-descp">пилешко месо, лук, домат, картоф, морков, фиде, магданоз</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                5.60 лв
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/5.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Гаспачо</span>
+                                            <span class="menu-descp">домат, чесън, лук, краставица, зелена чушка, кимион, зехтин, хляб</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                8.90 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/6.png" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Крем супа от броколи</span>
+                                            <span class="menu-descp">краве масло, лук, целина, пилешки бульон, броколи, брашно, сметана, черен пипер</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                8.90 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/7.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Крем супа от тиква</span>
+                                            <span class="menu-descp">лук, краве масло, пилешки бульон, тиква, сол, канела, джинджифил, черен пипер, сметана, хляб</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                9.80 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/8.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Крем супа от патладжан със скариди и бекон</span>
+                                            <span class="menu-descp">бекон, скариди, чесън, патладжан, лук, червен пипер, риган, босилек, пилешки бульон, дафинов лист, сметана, магданоз, хляб</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                12.90 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+<!--============================== APPETIZERS =====================================-->
+                        
+                        <div class="tab-pane fade " id="appetizers">
+                            <div class="row">
+                                <div class="menu-group">
+                                        <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/10.jpeg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Асорти от маслини</span>
+                                                    <span class="menu-descp">маслини асорти,чабата пр.изпечена</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        12.00 лв.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/11.jpg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Плато от мариновани и пушени риби</span>
+                                                    <span class="menu-descp">пушена скумрия,пушен паламуд,мар.херинга, мар.сафрид,мар.аншоа,масло,лук,лимон,хляб тост</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        23.30 лв.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/12.jpg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Плато от италиански сирена</span>
+                                                    <span class="menu-descp">пекорино,моцарела,страчатела,грано падано,горгонзола</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        7.90 лв.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/13.jpg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Плато от италиански Колбаси</span>
+                                                    <span class="menu-descp">прошуто крудо,пармска шунка,мортадела,салам милано</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        9.60 лв.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+<!--============================== BARBEQUE =====================================-->
+
+                        <div class="tab-pane" id="bbq">
+                                <div class="row">
+                                    <div class="menu-group">  
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                            <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                <img src="images/menu/brusketi/13.jpg" alt="" class="img-circle">
+                                            </div>
+                                            <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                <span class="menu-title">Гръцка салата</span>
+                                                <span class="menu-descp">домати, краставици, червен лук, маслини, пипер, сирене фета, подправки, зехтин</span>
+                                            </div>
+                                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                <span class="menu-item-price">
+                                                    2.20 лв.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                            <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                <img src="images/menu/brusketi/5.jpg" alt="" class="img-circle">
+                                            </div>
+                                            <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                <span class="menu-title">Салата "Табуле"</span>
+                                                <span class="menu-descp">булгур, магданоз, мента, домати, зелен лук, лимонов сок, зехтин</span>
+                                            </div>
+                                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                <span class="menu-item-price">
+                                                    7.60 лв.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                            <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                <img src="images/menu/brusketi/3.jpg" alt="" class="img-circle">
+                                            </div>
+                                            <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                <span class="menu-title">Салата от аспержи и манатарки</span>
+                                                <span class="menu-descp">рукола, аспержи, манатарки, зехтин, бадеми, пармезан</span>
+                                            </div>
+                                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                <span class="menu-item-price">
+                                                    5.20 лв.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                            <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                <img src="images/menu/brusketi/9.jpg" alt="" class="img-circle">
+                                            </div>
+                                            <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                <span class="menu-title">Салата на Главния готвач</span>
+                                                <span class="menu-descp">зелена салата, шунка, бекон, целина, краставици, чери домати, пуешко филе, ементал, чедар, сварени яйца, гъби  и дресинг от горчица</span>
+                                            </div>
+                                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                <span class="menu-item-price">
+                                                    7.80 лв.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<!--============================== PIZZAS =====================================-->
+                            
+                        <div class="tab-pane" id="pizzas">
+                                <div class="row">
+                                    <div class="menu-group">
+                                            <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                        <img src="images/menu/brusketi/4.jpg" alt="" class="img-circle">
+                                                    </div>
+                                                    <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                        <span class="menu-title">Салата "Романо"</span>
+                                                        <span class="menu-descp">микс от салати с артишок, грейпфрут, сушени чери домати, портокали, ябълки, пекорино, сок от лимон</span>
+                                                    </div>
+                                                    <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                        <span class="menu-item-price">
+                                                            23.00 лв.
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                        <img src="images/menu/brusketi/7.jpg" alt="" class="img-circle">
+                                                    </div>
+                                                    <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                        <span class="menu-title">Салата "Капрезе"</span>
+                                                        <span class="menu-descp">розови домати, моцарела, зехтин, песто от босилек, балсамико</span>
+                                                    </div>
+                                                    <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                        <span class="menu-item-price">
+                                                            14.00 лв.
+                                                        </span>
+                                                    </div>
+                                                    </div>
+                                                <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                        <img src="images/menu/brusketi/11.jpg" alt="" class="img-circle">
+                                                    </div>
+                                                    <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                        <span class="menu-title">Салата "Цезар" с пиле</span>
+                                                        <span class="menu-descp">салата айсберг, пилешки гърди, крутони, пармезан, дресинг от аншоа</span>
+                                                    </div>
+                                                    <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                        <span class="menu-item-price">
+                                                            3.20 лв.
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<!--============================== DESSERTS =====================================-->
+
+                        <div class="tab-pane" id="desserts">
+                            <div class="row">
+                                <div class="menu-group">
+
+                                        <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/7.jpg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Тартар от сьомга</span>
+                                                    <span class="menu-descp">сьомга,краставици,лук,кориандър,ядки,смляно чили, 
+        джингифил,тортила чипс,лимонов сок, чабата</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        $ 75
+                                                    </span>
+                                                </div>
+                                            </div>
+        <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/8.jpg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Tартар от говеждо бон филе</span>
+                                                    <span class="menu-descp">гов.бонфиле,суров жълтък,каперси,лук,лимонов сок,зехтин,горчица дижонска,кис.краставици,чесън,препечен хляб</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        $ 75
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/9.jpg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Пушена европейска змиорка</span>
+                                                    <span class="menu-descp">пуш.змиорка,масло,лимон,маслини,преп.хляб</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        $ 75
+                                                    </span>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2><a href="download/Menu-e-mail-16.pdf" target="_blank" class="menudownload">Изтегли менюто (.pdf)</a></h2>
+        </section>
+
+        <!-- Gallery section -->
+        <section id="gallery" class="gallery">
+            <h2>Галерия</h2>
+            <div class="flex-images">
+                <figure class="item" data-w="400" data-h="267">
+                    <a href="images/gallery/large/1.jpg">
+                        <img src="images/gallery/thumb/1.jpg" alt="" title="Потърсете новата си любима пица" />
+                    </a>
+                </figure>
+                <figure class="item" data-w="267" data-h="400">
+                    <a href="images/gallery/large/2.jpg">
+                        <img src="images/gallery/thumb/2.jpg" alt="" title="На ваше разположение са и подбрани сортове вина." />
+                    </a>
+                </figure>
+                <figure class="item" data-w="267" data-h="400">
+                    <a href="images/gallery/large/3.jpg">
+                        <img src="images/gallery/thumb/3.jpg" alt="" title="Страхотни сто процентови италиански пасти." />
+                    </a>
+                </figure>
+                <figure class="item" data-w="400" data-h="300">
+                    <a href="images/gallery/large/4.jpg">
+                        <img src="images/gallery/thumb/4.jpg" alt="" title="Вход La Corte dei Mangioni" />
+                    </a>
+                </figure>
+                <figure class="item" data-w="300" data-h="350">
+                    <a href="images/gallery/large/5.jpg">
+                        <img src="images/gallery/thumb/5.jpg" alt="" title="Всичко, от което може да имате нужда." />
+                    </a>
+                </figure>
+                <figure class="item" data-w="400" data-h="300">
+                    <a href="images/gallery/large/6.jpg">
+                        <img src="images/gallery/thumb/6.jpg" alt="" title="Топли и студени супи за всеки вкус." />
+                    </a>
+                </figure>
+                <figure class="item" data-w="267" data-h="400">
+                    <a href="images/gallery/large/7.jpg">
+                        <img src="images/gallery/thumb/7.jpg" alt="" title="Потопете се във фонтан от невероятни вкусове." />
+                    </a>
+                </figure>
+                <figure class="item" data-w="400" data-h="267">
+                    <a href="images/gallery/large/8.jpg">
+                        <img src="images/gallery/thumb/8.jpg" alt="" title="Не всичко е такова каквото изглежда." />
+                    </a>
+                </figure>
+                <figure class="item" data-w="400" data-h="267">
+                    <a href="images/gallery/large/9.jpg">
+                        <img src="images/gallery/thumb/9.jpg" alt="" title="Едно истинско италианско преживяване." />
+                    </a>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Promos section -->
+        <section id="promos">
+            <h2>Празнични оферти</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <a href="images/promos/8thdec.png"><img src="images/post-thumb-1.png" class="img-responsive" alt="post-thumb" /></a>
+                            </div>
+                            <div class="content">
+                                <h4><a href="images/promos/8thdec.png">Студентски празник</a></h4>
+
+                                <p>Най-добрата оферта в гр.Варна за вас студенти! Куверт: 15лв.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <a href=""><img src="images/post-thumb-4.jpg" class="img-responsive" alt="post-thumb" /></a>
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Никулден по италиански</a></h4>
+                                <p>
+                                    ОЧАКВАЙТЕ СКОРО!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <a href=""><img src="images/post-thumb-5.jpg" class="img-responsive" alt="post-thumb" /></a>
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Нова година в малка Италия</a></h4>
+                                <p>
+                                    ОЧАКВАЙТЕ СКОРО!
+                                </p>
+                            </div>
+                        </div>
+                    </div>          
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <a href=""><img src="images/post-thumb-6.png" class="img-responsive" alt="post-thumb" /></a>
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Детски рожденни дни</a></h4>
+                                <p>
+                               Незабравимо парти за вашето дете със специални детски менюта. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>          
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <a href=""><img src="images/post-thumb-2.png" class="img-responsive" alt="post-thumb" /></a>
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Маса за 10+ човека</a></h4>
+                                <p>
+                                    За десет или повече човека на вашата маса, вие ще получите 10% отстъпка от крайната сметка.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <a href=""><img src="images/post-thumb-3.png" class="img-responsive" alt="post-thumb" /></a>
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Маса за 20+ човека</a></h4>
+
+                                <p>
+                                    За 20 или повече човека, вашата крайна сметка ще олекне с 20%.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+
+            <!-- GOOGLE MAP -->
+            <div id="map" class="hidden-xs"></div>
+            
+            <!-- END GOOGLE MAP -->
+            <div class="container">
+                <div class="contact-details">
+                    <h2>Контакт с нас</h2>
+                    <p>Работно време: <br>От понеделник до неделя <br>  
+                    11:00ч. - 23:00ч.</p>
+                    <div class="contact-phone"><i class="icon icon-phone"></i>Телефон за резервация: +359 877 922 562</div>
+                    <div class="contact-email"><i class="icon icon-envelope"></i>E-мейл: <a href="lacortedeimangioni@abv.bg">lacortedeimangioni@abv.bg</a></div>
+                    <div class="contact-addresss"><i class="icon icon-restaurant"></i>Адрес: ул.Здравко Чакъров 9, гр.Варна</div><br>
+                    <div class="contact-phone"><i class="icon icon-facebook"></i>Фейсбук страница: <a href="https://www.facebook.com/lacortedeimangionivarna">https://www.facebook.com/lacortedeimangioni</a></div>   
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+
+            <p>© Copyright 2017 La Corte dei Mangioni. All Rights Reserved.</p>
+            <p>Created by <a href="">webtzar.com</a></p>
+            
+            </div>
+        </footer>
+    </div>
+    <!-- Javascripts -->
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <!-- Preloader -->
+    <script type="text/javascript">
+            $(window).load(function() { 
+                $('#status').fadeOut(); 
+                $('#preloader').delay(350).fadeOut('slow'); 
+                $('body').delay(350).css({'overflow':'visible'});
+            })
+    </script> 
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="js/scroll-reveal/scroll.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="js/smooth-scroll/smooth-scroll.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+     <!-- Lightbox -->
+    <script src="js/simplelightbox/simple-lightbox.min.js"></script>
+    <!-- Date/Time picker -->
+    <script src="js/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery-timepicker/jquery.timepicker.min.js"></script>
+    <!-- Sticky Navbar -->
+    <script src="js/sticky-navbar/navbar.js"></script>
+    <!-- Gallery -->
+    <script src="js/jQuery-flexImages/jquery.flex-images.min.js"></script>
+    <!-- Slider -->
+    <script src="js/superslides/jquery.superslides.min.js"></script>
+    <!-- Active Navigation Links -->
+    <script src="js/active/active-nav.js"></script>    
+    <!-- Google Map -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+</body>
+</html>
