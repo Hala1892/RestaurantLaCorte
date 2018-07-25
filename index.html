@@ -1,636 +1,975 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- TITLE -->
-    <title>Професионално полиране и поставяне на защитно покритие - София</title>
-        <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="img/favicon.jpg">
-        <!-- RESET STYLESHEET -->
-        <link rel="stylesheet" href="css/stylereset.css">
-        <!-- LOADER STYLESHEET -->
-        <link rel="stylesheet" href="css/loader.css">
-        <!-- BOOTSTRAP CDN -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- MAIN STYLESHEET -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- FONT AWESOME -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- RESPONSIVE STYLESHEET -->
-        <link rel="stylesheet" href="css/responsive.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Metas and title -->
+    <meta charset="utf-8">
+    <title>Пицария La Corte Dei Mangioni - Съдът на чревоугодниците</title>
+    <meta name="description" content="Ресторант - Пицария">
+    <meta name="keywords" content="пица, Възраждане, Варна, пицария, италианска, храна, ресторант">
+    <meta name="author" content="webtzar.com">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+        <!-- Lightbox -->
+    <link href='js/simplelightbox/simplelightbox.css' rel='stylesheet' type='text/css'>
+    <!-- Slider -->
+    <link rel="stylesheet" href="js/superslides/superslides.css">
+    <!-- Main one -->
+    <link rel="stylesheet" href="css/main.css">
 
-        
-    </head>
+</head>
 
-    <body>
-    <!-- LOADER -->
-<div id="overlay">
-    <div class="spinner">
-    </div>
-</div>
-    <div id="wrapper">
-        <!-- BUTTON GOING TO THE TOP -->
-        <a class="scroll" href="#wrapper"><i id="top" class="fa fa-arrow-circle-up"></i></a>
-        <!-- START OF THE HEADER -->
-        <header class="head-of-the-page">
-        <!-- BRAND AND SOCIAL ICONS PART 
-        <div class="upper-navbar row">
-          <div class="brand-name col-sm-6"><p class="d-inline-block">Polished </p><strong>Pro</strong></div>
-          <!-- SOCIAL LINKS 
-          <div class="social-icons-navbar col-sm-6">
-                  <a href="#"><i class="fa fa-facebook-square"></i> /profesionalpolishend/</a>
-          </div>
-      </div>-->
-        <!-- NAVIGATION BAR -->
-        <nav id="navbar" class="navbar navbar-expand-lg">
-                <div class="brand">
-                    <a class="brand-display brand-show scroll" href="#wrapper">Polished<strong>Pro</strong></a>
-                </div>
-        <!-- TOGGLER BAR -->
-                <button id="navbar-toggler" class="navbar-toggler" type="button" 
-                data-toggle="collapse" data-target="#navbarNavDropdown" 
-                aria-controls="navbarNavDropdown" aria-expanded="false" 
-                aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-        <!-- NAVIGATION LINKS -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link scroll" href="#about">За нас</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link scroll" href="#services">Услуги</a>
-                          </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="gallery.html">Галерия</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link scroll" href="#blog">Блог</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#largeModal">Контакти</a>
-                          </li>
-                  </ul>
-                </div>
-              </nav>
-
-        <!-- CAROUSEL -->
-<div id="carousel" class="carousel slide" data-ride="carousel" data-pause>
-  <div class="carousel-inner" role="listbox">
-    <!-- ITEMS START -->
-    <div class="carousel-item active">
-      <img src="img/carousel/03.jpg" alt="First slide" class="d-block img-fluid">
-      <div class="carousel-caption">
-        <h2>Професионално полиране</h2>
-        <!-- <a href="#" class="btn btn-lg btn-primary btn-contact" data-toggle="modal" data-target="#largeModal">Изпратете ни запитване</a> -->
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/carousel/02.jpg" alt="Second slide" class="d-block img-fluid">
-      <div class="carousel-caption">
-        <h2>Поставяне на защитно покритие</h2>
-        <!-- <a href="#" class="btn btn-lg btn-primary btn-contact" data-toggle="modal" data-target="#largeModal">Изпратете ни запитване</a> -->
-      </div>
-    </div>
-    <div class="carousel-item">
-            <img src="img/carousel/01.jpg" alt="Second slide" class="d-block img-fluid">
-            <div class="carousel-caption">
-              <h2>Професионална изработка</h2>
-              <!-- <a href="#" class="btn btn-lg btn-primary btn-contact" data-toggle="modal" data-target="#largeModal">Изпратете ни запитване</a> -->
+<body>
+        <!-- Loader -->
+        <div id="preloader">
+                <div id="status"></div>
             </div>
-    </div>
-
-  </div>
-
-  </div>
-  <!-- END OF CAROUSEL -->
-  </header>
-<!-- MAIN START -->
-<main>
-<!-- ABOUT US SECTION -->
-<section id="about" class="container-fluid">
-    <div class="photo-container  col-lg-12 hidden-md hidden-sm hidden-xs divider-background p-l-n">
-        <div class="background-image-holder">
+    <!-- Contacts Icons -->
+    <div class="social-icons">
+        <div class="phone"><a href="tel:+359894311108" data-toggle="modal" data-target="#reservationModal"><img src="http://comercialsanitaria.com.mx/wp-content/uploads/2017/07/icono-telefono.png" alt=""><span class="tooltiptext">Направи резервация</span></a></div>
+        <div class="facebook"><a target="_blank" rel="noopener noreferrer" href="https://facebook.com"><img src="http://store-images.s-microsoft.com/image/apps.25377.13510798887580439.d9078246-daa3-4682-8462-12dbfca9e0d4.136a3fcf-4edc-4af6-a944-cda1438abd1e" alt=""><span class="tooltiptext">Харесай ни!</span></a></div>
+        <div class="delivery"><a href="tel:+359894311108" data-toggle="modal" data-target="#deliveryModal"><img src="images/delivery.png" alt=""><span class="tooltiptext">Доставка до дома</span></a></div>
+    <p>Потърсете ни</p></div>
+    <!-- Modal -->
+<div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+                <div id="fh5co-contact" data-section="reservation">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-lg-6 col-md-7 col-md-offset-0 col-sm-9 col-xs-12">
+                                    <h2 class="heading to-animate">Резервирай маса</h2>
+                                    <p class="sub-heading to-animate">Резервирай маса при нас с помощта на формата по-долу или ни позвънни на <a href="tel:+359894311108"><span class="phone-number">+359 884 923 477</span></a><br>Благодарим ви!</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-7 col-md-offset-0 col-sm-9">
+                                    <div class="form-group ">
+                                        <label for="name" class="sr-only">Име</label>
+                                        <input id="name" class="form-control" placeholder="Вашето име" type="text">
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="email" class="sr-only">Е-мейл</label>
+                                        <input id="email" class="form-control" placeholder="Е-мейл" type="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="occation" class="sr-only">Повод</label>
+                                        <select class="form-control" id="occation">
+                                            <option>Повод за събиране</option>
+                                          <option>Сватба</option>
+                                          <option>Рожден ден</option>
+                                          <option>Фирмено парти</option>
+                                          <option>Друго</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="date" class="sr-only">Дата и час</label>
+                                        <input id="date" class="form-control" placeholder="Дата &amp; Time" type="text">
+                                    </div>
+            
+            
+                                        
+                                    <div class="form-group ">
+                                        <label for="message" class="sr-only">Съобщение</label>
+                                        <textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Съобщение"></textarea>
+                                    </div>
+                                    <div class="form-group ">
+                                        <input class="btn btn-primary" value="Изпрати" type="submit">
+                                    </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    
+                </div>
+        </div>
+      </div>
     </div>
-    <div class="row">
-        <div class="container">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row history pull-right">
-                <h2 class="text-right display-4 section-title">За нас</h2>
-                <p class="lead">Обожавате италианската кухня? Ако за вас тя е нещо повече от рецепта 
-                за тесто с доматено пюре, преоткрийте я, както никога до сега при нас в "La Corte dei Mangioni" и 
-                направете този подарък към всичките ви вкусове и възприятия.
-                Очите ви ще заблещукат, краката ви ще омекнат, а небцето ви ще пощурее от радост и наслада.
-                </p>
-                <p class="lead">Не случайно е и името на ресторанта "La Corte dei Mangioni" - "Съдът на чревоугодниците".
-                Оригинално от Палермо, Италия,  нашата цел не е да сме поредната квартална пицария.
-                Искаме да предоставим на нашиставяме възможността да се 
-                насладите на най-доброто от двата свята.Заповядайте в "La Corte dei Mangioni", за да си угодите по италиански
-                с приятелско обслужване, семейна атмосфера и преоткриване на нови любими вкусове.Очакваме ви!
-                </p>
-                <p class="blockquote-footer">От екипа на <cite title="Source Title">Polished Pro София.</cite></p>
-            </div>
-         </div>
-    </div>
-</section>
-<!-- END OF ABOUT US SECTION -->
-<!-- PARALLAX SECTION -->
-<section id="parallax">
-        <div class="parallax-body col-lg-12 col-sm-12">
-            <div class="parallax-content text-justify">
-                  <h1 class="text-center display-4">Kisho Ceramic Coating</h1>
-                  <p class="text-center">За радост на нашите клиенти ние от професионално полиране , вече сме доверен сервиз на марката Kisho която е лидер на паразара на керамичните покрития на автомобили във световен мащаб.Ние от професионално полиране благодарим на Kisho за гласуваното доверие! </p>
-            </div>
+  </div><!-- Modal -->
+  <div class="modal fade" id="deliveryModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-        </section>
-<!-- END OF PARALLAX -->
-<!-- SERVICES SECTION -->
-<section id="services">
-    <h2 class="text-center display-4 section-title">Услуги</h2>
-    <p class="section-lead text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <div class="services-grid">
-      <div class="service service1">
-        <i class="fa fa-magic"></i>
-        <h4>Професионално полиране</h4>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-  
-      <div class="service service2">
-        <i class="fa fa-shield"></i>
-        <h4>Поставяне на защитно покритие</h4>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="modal-body">
+                  <div id="fh5co-contact" data-section="reservation">
+                          <div class="container">
+                              <div class="row text-center">
+                                  <div class="col-lg-6 col-md-7 col-md-offset-0 col-sm-9 col-xs-12">
+                                      <h2 class="heading to-animate">Доставка по домовете</h2>
+                                      <p class="sub-heading to-animate">Възползвайте се от бързата ни доставка до прага на дома ви.Изпратете ни вашата поръчка чрез формата по-долу
+                                          или ни се обадете на телефона ни за поръчки: 
+                                          <a href="tel:+359894311108"><span class="phone-number">+359 884 923 477</span></a><br>Благодарим ви!</p></div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-lg-6 col-md-7 col-md-offset-0 col-sm-9">
+                                      <div class="form-group ">
+                                          <label for="name" class="sr-only">Име</label>
+                                          <input id="name" class="form-control" placeholder="Вашето име" type="text">
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="email" class="sr-only">Е-мейл</label>
+                                          <input id="email" class="form-control" placeholder="Е-мейл" type="email">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="occation" class="sr-only">Адрес</label>
+                                          <input id="adress" class="form-control" placeholder="Адрес" type="adress">
+                                      </div>   
+                                      <div class="form-group ">
+                                          <label for="message" class="sr-only">Поръчка</label>
+                                          <textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Поръчка"></textarea>
+                                      </div>
+                                      <div class="form-group ">
+                                            <label for="message" class="sr-only">Допълнителни изисквания</label>
+                                            <textarea name="" id="message" cols="10" rows="2" class="form-control" placeholder="Допълнителни изисквания"></textarea>
+                                        </div>
+                                      <div class="form-group ">
+                                          <input class="btn btn-primary" value="Изпрати" type="submit">
+                                      </div>
+                                      </div>
+                              </div>
+                          </div>
+                      </div>
+              
+                      
+                  </div>
+          </div>
+        </div>
       </div>
     </div>
-    </section>
-<!-- END OF SERVICES SECTION -->
+    <!-- Main Navbar -->
+<div class="off-canvas-menu">
+      <nav id="navbar" class="navbar navbar-default navbar-fixed-top header-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Навигация</span> Меню <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <span style="color: #24e244;">La Corte</span><span style="color: #c4c4c4"> dei </span>
+                    <span style="color: #ff2e23;">Mangioni</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll active" data-toggle="collapse" data-target=".navbar-collapse.in" href="#home">Начало</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" data-toggle="collapse" data-target=".navbar-collapse.in" href="#about">За Нас</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" data-toggle="collapse" data-target=".navbar-collapse.in" href="#our-menu">Меню</a>
+                    </li>
+                                        <li>
+                        <a class="page-scroll" data-toggle="collapse" data-target=".navbar-collapse.in" href="#gallery">Галерия</a>
+                    </li>
+                                        <li>
+                        <a class="page-scroll" data-toggle="collapse" data-target=".navbar-collapse.in" href="#promos">Оферти</a>
+                    </li>
+                                        <li>
+                        <a class="page-scroll" data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact">Контакт с нас</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<!-- PARALLAX SECTION -->
-<section id="parallax">
-        <div class="parallax_02 col-lg-12 col-sm-12">
-            <!-- OUR CLIENTS SECTION -->
-    <section id="clients">
-            <div class="banner">
-                        <ul>
+    <!-- Main body -->
+    <div id="container">
+    <!-- Home Secton -->
+        <section id="home">
+    <!-- Slider -->
+            <ul class="slides-container">
+                <li>
+                    <img src="images/slides/slide1.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2>
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/slides/slide2.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2>
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/slides/slide3.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2>
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/slides/slide4.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2>
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/slides/slide5.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2> 
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/slides/slide7.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2>
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+                <li>
+                    <img src="images/slides/slide8.jpg" alt="slide1" class="img-responsive">
+                        <div class="caption">
+                            <h2 class="title">La Corte dei Mangioni</h2>
+                            <p class="title">Съдът на чревоугодниците</p>
+                            <p class="type">Италиански ресторант - пицария</p>
+                        </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- About us section -->
+        <section id="about" class="container-fluid">
+            <div class="photo-container  col-lg-4 hidden-sm hidden-xs divider-background p-l-n">
+                <div class="background-image-holder">
+                    <img src="images/pizza-start.png" alt="" style="display:none">
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 history pull-right">
+                        <h2>За нас</h2>
+                        <p>Обожавате италианската кухня? Ако за вас тя е нещо повече от рецепта 
+                        за тесто с доматено пюре, преоткрийте я, както никога до сега при нас в "La Corte dei Mangioni" и 
+                        направете този подарък към всичките ви вкусове и възприятия.
+                        Очите ви ще заблещукат, краката ви ще омекнат, а небцето ви ще пощурее от радост и наслада.
+                        </p>
+
+                        <p>Не случайно е и името на ресторанта La Corte dei Mangioni - Съдът на чревоугодниците.
+                        Оригинално от Палермо, Италия,  нашата цел не е да сме поредната квартална пицария.
+                        Искаме да предоставим на нашите гости усещането за истинска, първокласна италианска храна
+                        с цялото и разнообразие и красота, както и грамаж, разбира се.Предлагаме ви възхитителна комбинация между
+                        традиционната италианска кухня и модерното кулинарно изкуство.Заповядайте в "La Corte dei Mangioni", за да си угодите по италиански
+                        с приятелско обслужване, семейна атмосфера и преоткриване на нови любими вкусове.Очакваме ви!
+                        </p>
+                    </div>
+                 </div>
+            </div>
+        </section>
+        
+        <!-- Our Menu section -->
+        <section id="our-menu">
+            <div class="container">
+                <h2>Меню</h2>
+                <div class="menu-table">
+                    <!-- Menu tabs -->
+                    <ul class="nav nav-tabs  menu-tabs" role="tablist">
+                        <li class="active">
+                            <a href="#bruschetti" aria-controls="bruschetti" role="tab" data-toggle="tab" class="icon icon-home"><span>Брускети и антипасти</span></a>
+                        </li>
                         <li>
-                            <div class="client-group commercial">    
-                                <div class="one-fourth first">
-                                    <div class="client graham-holdings-logo"></div>
-                                </div>
-                                <div class="one-fourth">
-                                    <div class="client k12-logo"></div>
-                                </div>
-                                <div class="one-fourth">
-                                    <div class="client blackboard-logo"></div>
-                                </div>
-                                <div class="one-fourth">
-                                    <div class="client kaplan-university-logo"></div>
-                                </div>	
-                            </div>	        
+                            <a href="#soups" aria-controls="soups" role="tab" data-toggle="tab">Супи</a>
+                        </li>
+                        <li>
+                            <a href="#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab">Предястия</a>
+                        </li>
+                        <li>
+                            <a href="#pizzas" aria-controls="pizzas" role="tab" data-toggle="tab">Пици</a>
+                        </li>
+                        <li>
+                            <a href="#bbq" aria-controls="bbq" role="tab" data-toggle="tab">Скара</a>
+                        </li>
+                        <li>
+                            <a href="#desserts" aria-controls="desserts" role="tab" data-toggle="tab">Десерти</a>
                         </li>
                     </ul>
-                </div>
-            </section>
-            
-            <!-- END OF CLIENTS SECTION -->
-          </div>
-        </section>
-          <!-- END OF PARALLAX -->
-  
-  <!-- START OF MINI BLOG SECTION -->
-  <section id="blog" class="blog-section">
-  <div class="container">
-      <h2 class="text-center section-title display-4">Блог</h2>
-      <p class="section-lead text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="showen-blog">
-    <!-- FIRST CARD -->
-            <div class="card card-post">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-5 align-self-center">
-                        <a href=""><img class="blog-img img-fluid" src="img/Blog/img-1.jpg" alt=""></a>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="card-body">
-                            <h4 class="card-title">Classic Minimal Template</h4>
-                            <p class="card-text">Some quick example text to build on the card title and 
-                              make up the bulk of the card's content. Some quick example text to build on the card title.</p>
-                            <a class="btn btn-underline" href="blog-single.html">Прочети повече → </a>
-                        </div>
-                        <div class="card-bottom">
-                            <ul class="list-inline">
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-reply"></i> Мнения (7)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-comments"></i> Коментари (14)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-share-alt"></i> Споделяне
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <!-- SECOND CARD -->
-            <div class="card card-post">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-5 align-self-center">
-                        <a href=""><img class="blog-img img-fluid" src="img/Blog/img-2.jpg" alt=""></a>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="card-body">
-                            <h4 class="card-title">Classic Minimal Template</h4>
-                            <p class="card-text">Some quick example text to build on the card title and 
-                              make up the bulk of the card's content. Some quick example text to build on the card title.</p>
-                            <a class="btn btn-underline" href="blog-single.html">Прочети повече → </a>
-                        </div>
-                        <div class="card-bottom">
-                            <ul class="list-inline">
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-reply"></i> Мнения (7)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-comments"></i> Коментари (14)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-share-alt"></i> Споделяне
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <!-- THIRD CARD -->
-            <div class="card card-post">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-5 align-self-center">
-                        <a href=""><img class="blog-img img-fluid" src="img/Blog/img-3.jpg" alt=""></a>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="card-body">
-                            <h4 class="card-title">Classic Minimal Template</h4>
-                            <p class="card-text">Some quick example text to build on the card title and 
-                              make up the bulk of the card's content. Some quick example text to build on the card title.</p>
-                            <a class="btn btn-underline" href="blog-single.html">Прочети повече → </a>
-                        </div>
-                        <div class="card-bottom">
-                            <ul class="list-inline">
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-reply"></i> Мнения (7)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-comments"></i> Коментари (14)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-share-alt"></i> Споделяне
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-            <!-- HIDDEN BLOG STARTS HERE -->
-<div class="hidden-blog">
-            <!-- FOURTH CARD -->
-            <div class="card card-post">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-md-5 align-self-center">
-                            <a href=""><img class="blog-img img-fluid" src="img/Blog/img-4.jpg" alt=""></a>
-                        </div>
-                        <div class="col-12 col-md-7">
-                            <div class="card-body">
-                                <h4 class="card-title">Classic Minimal Template</h4>
-                                <p class="card-text">Some quick example text to build on the card title and 
-                                  make up the bulk of the card's content. Some quick example text to build on the card title.</p>
-                                <a class="btn btn-underline" href="blog-single.html">Прочети повече → </a>
-                            </div>
-                            <div class="card-bottom">
-                                <ul class="list-inline">
-                                    <li class="list-inline-item d-inline">
-                                        <a href="#">
-                                            <i class="fa fa-reply"></i> Мнения (7)
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item d-inline">
-                                        <a href="#">
-                                            <i class="fa fa-comments"></i> Коментари (14)
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item d-inline">
-                                        <a href="#">
-                                            <i class="fa fa-share-alt"></i> Споделяне
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        <!-- THIRD CARD -->
-        <div class="card card-post">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-5 align-self-center">
-                        <a href=""><img class="blog-img img-fluid" src="img/Blog/img-3.jpg" alt=""></a>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="card-body">
-                            <h4 class="card-title">Classic Minimal Template</h4>
-                            <p class="card-text">Some quick example text to build on the card title and 
-                              make up the bulk of the card's content. Some quick example text to build on the card title.</p>
-                            <a class="btn btn-underline" href="blog-single.html">Прочети повече → </a>
-                        </div>
-                        <div class="card-bottom">
-                            <ul class="list-inline">
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-reply"></i> Мнения (7)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-comments"></i> Коментари (14)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-share-alt"></i> Споделяне
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- THIRD CARD -->
-        <div class="card card-post">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-5 align-self-center">
-                        <a href=""><img class="blog-img img-fluid" src="img/Blog/img-3.jpg" alt=""></a>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="card-body">
-                            <h4 class="card-title">Classic Minimal Template</h4>
-                            <p class="card-text">Some quick example text to build on the card title and 
-                              make up the bulk of the card's content. Some quick example text to build on the card title.</p>
-                            <a class="btn btn-underline" href="blog-single.html">Прочети повече → </a>
-                        </div>
-                        <div class="card-bottom">
-                            <ul class="list-inline">
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-reply"></i> Мнения (7)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-comments"></i> Коментари (14)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-share-alt"></i> Споделяне
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- THIRD CARD -->
-        <div class="card card-post">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-5 align-self-center">
-                        <a href=""><img class="blog-img img-fluid" src="img/Blog/img-3.jpg" alt=""></a>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="card-body">
-                            <h4 class="card-title">Classic Minimal Template</h4>
-                            <p class="card-text">Some quick example text to build on the card title and 
-                              make up the bulk of the card's content. Some quick example text to build on the card title.</p>
-                            <a class="btn btn-underline" href="blog-single.html">Прочети повече → </a>
-                        </div>
-                        <div class="card-bottom">
-                            <ul class="list-inline">
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-reply"></i> Мнения (7)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-comments"></i> Коментари (14)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-share-alt"></i> Споделяне
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- THIRD CARD -->
-        <div class="card card-post">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-5 align-self-center">
-                        <a href=""><img class="blog-img img-fluid" src="img/Blog/img-3.jpg" alt=""></a>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="card-body">
-                            <h4 class="card-title">Classic Minimal Template</h4>
-                            <p class="card-text">Some quick example text to build on the card title and 
-                              make up the bulk of the card's content. Some quick example text to build on the card title.</p>
-                            <a class="btn btn-underline" href="blog-single.html">Прочети повече → </a>
-                        </div>
-                        <div class="card-bottom">
-                            <ul class="list-inline">
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-reply"></i> Мнения (7)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-comments"></i> Коментари (14)
-                                    </a>
-                                </li>
-                                <li class="list-inline-item d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-share-alt"></i> Споделяне
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-</div>
-        </div>
-    </div>
-    <div class="text-center"><div class="btn-group">
-    <button id="loadMore" class="btn">Зареди още</button>
-        <button id="goBack" class="btn">Върни назад</button></div></div>
-    </div>
-</section>
-<!-- END OF MINI BLOG SECTION -->
-<!-- CONTACT FORM -->
-      <!-- large modal -->
-<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title" id="myModalLabel">Контакт с нас</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                    <section id="contact-form">
-                            <div>
-                              <div class="row">
-                                <div class="col-sm-12">
-                                  <div class="row">
-                                        <div class="col-sm-4"><p>Изпратете ни запитване относно сервиза, цена или услуга като попълнете полетата.</p>
+<!--============================== BRUSCHETTI =====================================-->
 
+                    <div class="tab-content">
+                        <div class="tab-pane active fade in" id="bruschetti">
+                            <div class="row">
+                                <div class="menu-group">
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/brusketi/1.jpg" alt="" class="img-circle">
                                         </div>
-                                    <div class="col-sm-8 col-sm-offset-2">
-                                      <div>
-                                      </div>
-                                      <form method="post" data-form-title="CONTACT US">
-                                        <input type="hidden" data-form-email="true">
-                                        <div class="form-group">
-                                          <input type="text" class="form-control" name="name" required="" placeholder="Име*" data-form-field="Name">
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Брускета с чери домати и рикота</span>
+                                            <span class="menu-descp">чери домати, босилек, хляб, рикота, зехтин, чесън</span>
                                         </div>
-                                        <div class="form-group">
-                                          <input type="email" class="form-control" name="email" required="" placeholder="Е-Мейл*" data-form-field="Email">
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <span class="menu-item-price">
+                                                5.69 лв.
+                                            </span>
                                         </div>
-                                        <div class="form-group">
-                                          <input type="tel" class="form-control" name="phone" placeholder="Телефон" data-form-field="Phone">
-                                        </div>
-                                        <div class="form-group">
-                                          <textarea class="form-control" name="message" placeholder="Съобщение" rows="7" data-form-field="Message"></textarea>
-                                        </div>
-                                        <div>
-                                          <button type="submit" class="btn btn-lg btn-danger">Изпрати</button>
-                                        </div>
-                                      </form>
                                     </div>
-
-                                    
-                                  </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/brusketi/2.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Брускета с пармска шунка и смокини</span>
+                                            <span class="menu-descp">смокини, прошуто, джоджен, хляб, зехтин, козе сирене, Рукола</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <span class="menu-item-price">
+                                                3.59 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/brusketi/3.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Брускета с аншоа и маслини</span>
+                                            <span class="menu-descp">хляб, магданоз, Зехтин, аншоа, каперси, маслини</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <span class="menu-item-price">
+                                                3.59 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/brusketi/4.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Брускета с пушена сьомга, крема сирене и рукола</span>
+                                            <span class="menu-descp">крема сирене, лук, лимонов сок, горчица, каперси, хляб, рукола, пушена сьомга</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <span class="menu-item-price">
+                                                5.59 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/brusketi/5.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Брускета с манатарки и пармезан</span>
+                                            <span class="menu-descp">манатарка, хляб, сол, черен пипер, сок от лимон, розмарин, мащерка, лук, чери домати, рукола</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <span class="menu-item-price">
+                                                6.59 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/brusketi/6.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                            <span class="menu-title">Карпачо от говеждо филе</span>
+                                            <span class="menu-descp">Гов.филе,рукола,каперси,зехтин,пармезан</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                            <span class="menu-item-price">
+                                                2.39 лв.
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                            </div>
-                          </section>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- END OF CONTACT FORM -->
-
-
-<!-- GOOGLE MAP -->
-<section id="google-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1467.181681294733!2d23.344544346964405!3d42.65365475017172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa843b429aa987%3A0x12421716c5ec4184!2z0YPQuy4g4oCe0LDQutCw0LQuINCW0LDQuiDQndCw0YLQsNC94oCcLCAxNzAwINCh0YLRg9C00LXQvdGC0YHQutC4INCa0L7QvNC_0LvQtdC60YEsINCh0L7RhNC40Y8!5e0!3m2!1sbg!2sbg!4v1519851473766" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-</section>
-<!-- END GOOGLE MAP -->
-
-<!-- START OF FOOTER -->
-<footer id="footer">
-        <div class="footer">
-            <div class="container box">
-                <div class="row footerwidgets">
-                    <div class="col-lg-3 col-md-6 col-sm-6 .col-xs-12">
-                        <!-- Text Widget start -->
-                        <div class="widget text-widget">
-                            <h2 class="heading">Нашия адрес</h2>
-                                <div class="textsec">
-                                    <p>
-                                        Нашият сервиз се намира в град София, ул. „академик Жак Натан“.
-                                        Заповядайте при нас.
-                                    </p>
-                                    <ul class="contactdetail">
-                                        <li><a href="#"><i class="fa fa-facebook-square"></i> profesionalpolishend</a></li>
-                                        <li><a href="mailto:support@function.com"><i class="fa fa-envelope"></i> polishedpro@abv.bg</a></li>
-                                    </ul>                            
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 .col-xs-12">
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 .col-xs-12">
-                        <div class="widget widget-contact">
-                            <h2 class="heading">Изпрати бърз е-мейл</h2>
-                            <div class="contact-forms">
-                                <form>
-                                    <div class="row">
-                                        <div class="col-lg-5 col-md-12 col-sm-12 .col-xs-12">
-                                            <input type="text" placeholder="Вашето име" />
+
+<!--============================== SOUPS =====================================-->
+
+                        <div class="tab-pane fade " id="soups">
+                            <div class="row">
+                                <div class="menu-group">
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/1.jpg" alt="" class="img-circle">
                                         </div>
-                                        <div class="col-lg-5 col-md-12 col-sm-12 .col-xs-12">
-                                            <input type="text" placeholder="Вашия е-мейл" />
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Рибена супа "Буябес"</span>
+                                            <span class="menu-descp">скариди, черен пипер, дафинов лист, зехтин, копър, лук, праз, чесън, домати, сьомга, треска, миди, лют червен пипер, риган, мащерка, хляб, картофи</span>
                                         </div>
-                                        <div class="col-lg-10 col-md-12 col-sm-12 .col-xs-12">
-                                            <textarea class="contact-content" placeholder="Съобщение"></textarea>
-                                        </div>
-                                        <div class="send-btn col-lg-10 col-md-12 col-sm-12 .col-xs-12">
-                                            <h5 class="order btn btn-primary"><a href="#">Изпрати</a></h5>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                11.59 лв.
+                                            </span>
                                         </div>
                                     </div>
-                                </form>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/2.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Супа "Гулаш"</span>
+                                            <span class="menu-descp">говеждо, сладък червен пипер, бульон, картофи, пащърнак, морков, домат, целина, зелена чушка, магданоз, заквасена сметана</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                9.98 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/3.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Супа "Минестрони"</span>
+                                            <span class="menu-descp">зехтин, праз, моркови, тиквички, зелен боб, целина, зеленчуков бульон, домати, мащерка, боб, макарони</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                5.68 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/4.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Пилешка бистра</span>
+                                            <span class="menu-descp">пилешко месо, лук, домат, картоф, морков, фиде, магданоз</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                5.60 лв
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/5.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Гаспачо</span>
+                                            <span class="menu-descp">домат, чесън, лук, краставица, зелена чушка, кимион, зехтин, хляб</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                8.90 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/6.png" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Крем супа от броколи</span>
+                                            <span class="menu-descp">краве масло, лук, целина, пилешки бульон, броколи, брашно, сметана, черен пипер</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                8.90 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/7.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Крем супа от тиква</span>
+                                            <span class="menu-descp">лук, краве масло, пилешки бульон, тиква, сол, канела, джинджифил, черен пипер, сметана, хляб</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                9.80 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                        <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                            <img src="images/menu/supi/8.jpg" alt="" class="img-circle">
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                            <span class="menu-title">Крем супа от патладжан със скариди и бекон</span>
+                                            <span class="menu-descp">бекон, скариди, чесън, патладжан, лук, червен пипер, риган, босилек, пилешки бульон, дафинов лист, сметана, магданоз, хляб</span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                            <span class="menu-item-price">
+                                                12.90 лв.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+<!--============================== APPETIZERS =====================================-->
+                        
+                        <div class="tab-pane fade " id="appetizers">
+                            <div class="row">
+                                <div class="menu-group">
+                                        <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/10.jpeg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Асорти от маслини</span>
+                                                    <span class="menu-descp">маслини асорти,чабата пр.изпечена</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        12.00 лв.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/11.jpg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Плато от мариновани и пушени риби</span>
+                                                    <span class="menu-descp">пушена скумрия,пушен паламуд,мар.херинга, мар.сафрид,мар.аншоа,масло,лук,лимон,хляб тост</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        23.30 лв.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/12.jpg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Плато от италиански сирена</span>
+                                                    <span class="menu-descp">пекорино,моцарела,страчатела,грано падано,горгонзола</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        7.90 лв.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/13.jpg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Плато от италиански Колбаси</span>
+                                                    <span class="menu-descp">прошуто крудо,пармска шунка,мортадела,салам милано</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        9.60 лв.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+<!--============================== BARBEQUE =====================================-->
+
+                        <div class="tab-pane" id="bbq">
+                                <div class="row">
+                                    <div class="menu-group">  
+                                    <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                            <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                <img src="images/menu/brusketi/13.jpg" alt="" class="img-circle">
+                                            </div>
+                                            <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                <span class="menu-title">Гръцка салата</span>
+                                                <span class="menu-descp">домати, краставици, червен лук, маслини, пипер, сирене фета, подправки, зехтин</span>
+                                            </div>
+                                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                <span class="menu-item-price">
+                                                    2.20 лв.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                            <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                <img src="images/menu/brusketi/5.jpg" alt="" class="img-circle">
+                                            </div>
+                                            <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                <span class="menu-title">Салата "Табуле"</span>
+                                                <span class="menu-descp">булгур, магданоз, мента, домати, зелен лук, лимонов сок, зехтин</span>
+                                            </div>
+                                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                <span class="menu-item-price">
+                                                    7.60 лв.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                            <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                <img src="images/menu/brusketi/3.jpg" alt="" class="img-circle">
+                                            </div>
+                                            <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                <span class="menu-title">Салата от аспержи и манатарки</span>
+                                                <span class="menu-descp">рукола, аспержи, манатарки, зехтин, бадеми, пармезан</span>
+                                            </div>
+                                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                <span class="menu-item-price">
+                                                    5.20 лв.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                            <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                <img src="images/menu/brusketi/9.jpg" alt="" class="img-circle">
+                                            </div>
+                                            <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                <span class="menu-title">Салата на Главния готвач</span>
+                                                <span class="menu-descp">зелена салата, шунка, бекон, целина, краставици, чери домати, пуешко филе, ементал, чедар, сварени яйца, гъби  и дресинг от горчица</span>
+                                            </div>
+                                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                <span class="menu-item-price">
+                                                    7.80 лв.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<!--============================== PIZZAS =====================================-->
+                            
+                        <div class="tab-pane" id="pizzas">
+                                <div class="row">
+                                    <div class="menu-group">
+                                            <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                        <img src="images/menu/brusketi/4.jpg" alt="" class="img-circle">
+                                                    </div>
+                                                    <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                        <span class="menu-title">Салата "Романо"</span>
+                                                        <span class="menu-descp">микс от салати с артишок, грейпфрут, сушени чери домати, портокали, ябълки, пекорино, сок от лимон</span>
+                                                    </div>
+                                                    <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                        <span class="menu-item-price">
+                                                            23.00 лв.
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                        <img src="images/menu/brusketi/7.jpg" alt="" class="img-circle">
+                                                    </div>
+                                                    <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                        <span class="menu-title">Салата "Капрезе"</span>
+                                                        <span class="menu-descp">розови домати, моцарела, зехтин, песто от босилек, балсамико</span>
+                                                    </div>
+                                                    <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                        <span class="menu-item-price">
+                                                            14.00 лв.
+                                                        </span>
+                                                    </div>
+                                                    </div>
+                                                <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                        <img src="images/menu/brusketi/11.jpg" alt="" class="img-circle">
+                                                    </div>
+                                                    <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7">
+                                                        <span class="menu-title">Салата "Цезар" с пиле</span>
+                                                        <span class="menu-descp">салата айсберг, пилешки гърди, крутони, пармезан, дресинг от аншоа</span>
+                                                    </div>
+                                                    <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                                                        <span class="menu-item-price">
+                                                            3.20 лв.
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<!--============================== DESSERTS =====================================-->
+
+                        <div class="tab-pane" id="desserts">
+                            <div class="row">
+                                <div class="menu-group">
+
+                                        <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/7.jpg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Тартар от сьомга</span>
+                                                    <span class="menu-descp">сьомга,краставици,лук,кориандър,ядки,смляно чили, 
+        джингифил,тортила чипс,лимонов сок, чабата</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        $ 75
+                                                    </span>
+                                                </div>
+                                            </div>
+        <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/8.jpg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Tартар от говеждо бон филе</span>
+                                                    <span class="menu-descp">гов.бонфиле,суров жълтък,каперси,лук,лимонов сок,зехтин,горчица дижонска,кис.краставици,чесън,препечен хляб</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        $ 75
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="menu-group-item clearfix col-lg-6 col-md-6 col-sm-12">
+                                                <div class="col-md-3 col-lg-3 col-sm-3 hidden-xs">
+                                                    <img src="images/menu/brusketi/9.jpg" alt="" class="img-circle">
+                                                </div>
+                                                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-9">
+                                                    <span class="menu-title">Пушена европейска змиорка</span>
+                                                    <span class="menu-descp">пуш.змиорка,масло,лимон,маслини,преп.хляб</span>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-3">
+                                                    <span class="menu-item-price">
+                                                        $ 75
+                                                    </span>
+                                                </div>
+                                            </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
-        </div>
-        <div class="copyright">        
-            <p class="author" align="center">&copy Всички права запазени PolishedPro Sofia</p>    
-            <p class="author" align="center">Създаден от Владимир Манов</p>                
-            <p class="author" align="center">webtzar.com</p>
-        </div>
-    </footer>
-</main>
-</div>
-    <script src="js/loader.js"></script>
+            <h2><a href="download/Menu-e-mail-16.pdf" target="_blank" class="menudownload">Изтегли менюто (.pdf)</a></h2>
+        </section>
+
+        <!-- Gallery section -->
+        <section id="gallery" class="gallery">
+            <h2>Галерия</h2>
+            <div class="flex-images">
+                <figure class="item" data-w="400" data-h="267">
+                    <a href="images/gallery/large/1.jpg">
+                        <img src="images/gallery/thumb/1.jpg" alt="" title="Потърсете новата си любима пица" />
+                    </a>
+                </figure>
+                <figure class="item" data-w="267" data-h="400">
+                    <a href="images/gallery/large/2.jpg">
+                        <img src="images/gallery/thumb/2.jpg" alt="" title="На ваше разположение са и подбрани сортове вина." />
+                    </a>
+                </figure>
+                <figure class="item" data-w="267" data-h="400">
+                    <a href="images/gallery/large/3.jpg">
+                        <img src="images/gallery/thumb/3.jpg" alt="" title="Страхотни сто процентови италиански пасти." />
+                    </a>
+                </figure>
+                <figure class="item" data-w="400" data-h="300">
+                    <a href="images/gallery/large/4.jpg">
+                        <img src="images/gallery/thumb/4.jpg" alt="" title="Вход La Corte dei Mangioni" />
+                    </a>
+                </figure>
+                <figure class="item" data-w="300" data-h="350">
+                    <a href="images/gallery/large/5.jpg">
+                        <img src="images/gallery/thumb/5.jpg" alt="" title="Всичко, от което може да имате нужда." />
+                    </a>
+                </figure>
+                <figure class="item" data-w="400" data-h="300">
+                    <a href="images/gallery/large/6.jpg">
+                        <img src="images/gallery/thumb/6.jpg" alt="" title="Топли и студени супи за всеки вкус." />
+                    </a>
+                </figure>
+                <figure class="item" data-w="267" data-h="400">
+                    <a href="images/gallery/large/7.jpg">
+                        <img src="images/gallery/thumb/7.jpg" alt="" title="Потопете се във фонтан от невероятни вкусове." />
+                    </a>
+                </figure>
+                <figure class="item" data-w="400" data-h="267">
+                    <a href="images/gallery/large/8.jpg">
+                        <img src="images/gallery/thumb/8.jpg" alt="" title="Не всичко е такова каквото изглежда." />
+                    </a>
+                </figure>
+                <figure class="item" data-w="400" data-h="267">
+                    <a href="images/gallery/large/9.jpg">
+                        <img src="images/gallery/thumb/9.jpg" alt="" title="Едно истинско италианско преживяване." />
+                    </a>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Promos section -->
+        <section id="promos">
+            <h2>Празнични оферти</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <a href="images/promos/8thdec.png"><img src="images/post-thumb-1.png" class="img-responsive" alt="post-thumb" /></a>
+                            </div>
+                            <div class="content">
+                                <h4><a href="images/promos/8thdec.png">Студентски празник</a></h4>
+
+                                <p>Най-добрата оферта в гр.Варна за вас студенти! Куверт: 15лв.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <a href=""><img src="images/post-thumb-4.jpg" class="img-responsive" alt="post-thumb" /></a>
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Никулден по италиански</a></h4>
+                                <p>
+                                    ОЧАКВАЙТЕ СКОРО!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <a href=""><img src="images/post-thumb-5.jpg" class="img-responsive" alt="post-thumb" /></a>
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Нова година в малка Италия</a></h4>
+                                <p>
+                                    ОЧАКВАЙТЕ СКОРО!
+                                </p>
+                            </div>
+                        </div>
+                    </div>          
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <a href=""><img src="images/post-thumb-6.png" class="img-responsive" alt="post-thumb" /></a>
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Детски рожденни дни</a></h4>
+                                <p>
+                               Незабравимо парти за вашето дете със специални детски менюта. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>          
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <a href=""><img src="images/post-thumb-2.png" class="img-responsive" alt="post-thumb" /></a>
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Маса за 10+ човека</a></h4>
+                                <p>
+                                    За десет или повече човека на вашата маса, вие ще получите 10% отстъпка от крайната сметка.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="post">
+                            <div class="post-img-content">
+                                <a href=""><img src="images/post-thumb-3.png" class="img-responsive" alt="post-thumb" /></a>
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Маса за 20+ човека</a></h4>
+
+                                <p>
+                                    За 20 или повече човека, вашата крайна сметка ще олекне с 20%.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+
+            <!-- GOOGLE MAP -->
+            <div id="map" class="hidden-xs"></div>
+            
+            <!-- END GOOGLE MAP -->
+            <div class="container">
+                <div class="contact-details">
+                    <h2>Контакт с нас</h2>
+                    <p>Работно време: <br>От понеделник до неделя <br>  
+                    11:00ч. - 23:00ч.</p>
+                    <div class="contact-phone"><i class="icon icon-phone"></i>Телефон за резервация: +359 877 922 562</div>
+                    <div class="contact-email"><i class="icon icon-envelope"></i>E-мейл: <a href="lacortedeimangioni@abv.bg">lacortedeimangioni@abv.bg</a></div>
+                    <div class="contact-addresss"><i class="icon icon-restaurant"></i>Адрес: ул.Здравко Чакъров 9, гр.Варна</div><br>
+                    <div class="contact-phone"><i class="icon icon-facebook"></i>Фейсбук страница: <a href="https://www.facebook.com/lacortedeimangionivarna">https://www.facebook.com/lacortedeimangioni</a></div>   
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+
+            <p>© Copyright 2017 La Corte dei Mangioni. All Rights Reserved.</p>
+            <p>Created by <a href="">webtzar.com</a></p>
+            
+            </div>
+        </footer>
+    </div>
+    <!-- Javascripts -->
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <!-- Preloader -->
+    <script type="text/javascript">
+            $(window).load(function() { 
+                $('#status').fadeOut(); 
+                $('#preloader').delay(350).fadeOut('slow'); 
+                $('body').delay(350).css({'overflow':'visible'});
+            })
+    </script> 
+
+    <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/toggler.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="https://code.jquery.com/jquery-1.9.1.js" integrity="sha256-e9gNBsAcA0DBuRWbm0oZfbiCyhjLrI6bmqAl5o+ZjUA=" crossorigin="anonymous"></script>
-    <script src="js/smooth-scroll.js"></script>
-    <script src="js/sticky-navbar.js"></script>    
-    <script src="js/top-button.js"></script>
-    <script src="js/load-more.js"></script>
+    <script src="js/scroll-reveal/scroll.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="js/smooth-scroll/smooth-scroll.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+     <!-- Lightbox -->
+    <script src="js/simplelightbox/simple-lightbox.min.js"></script>
+    <!-- Date/Time picker -->
+    <script src="js/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery-timepicker/jquery.timepicker.min.js"></script>
+    <!-- Sticky Navbar -->
+    <script src="js/sticky-navbar/navbar.js"></script>
+    <!-- Gallery -->
+    <script src="js/jQuery-flexImages/jquery.flex-images.min.js"></script>
+    <!-- Slider -->
+    <script src="js/superslides/jquery.superslides.min.js"></script>
+    <!-- Active Navigation Links -->
+    <script src="js/active/active-nav.js"></script>    
+    <!-- Google Map -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
 </body>
 </html>
