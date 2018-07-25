@@ -1,8 +1,8 @@
 /* Page Preloader */
 $(window).load(function() {
     $('#status').fadeOut();
-    $('#preloader').delay(350).fadeOut('slow');
-    $('body').delay(350).css({
+    $('#preloader').delay(1).fadeOut('slow');
+    $('body').delay(1).css({
         'overflow': 'visible'
     });
 })
@@ -12,7 +12,7 @@ $(window).load(function() {
 /* ---------------------------------------------- */
 $('#home').superslides({
     animation: 'fade',
-    play: '4000',
+    play: '3000',
 });
 
 /* ---------------------------------------------- /*
@@ -316,8 +316,7 @@ var contentString = '<div id="content">'+
   });
 
     var map = new google.maps.Map(mapElement, mapOptions);
-
-    // Let's also add a marker while we're at it
+// Google Marker
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(43.2376697,27.8735113),
         animation: google.maps.Animation.DROP,
