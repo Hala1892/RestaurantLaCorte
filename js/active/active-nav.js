@@ -2,11 +2,11 @@ $(document).ready(function () {
         $(document).on("scroll", onScroll);
         
         //smoothscroll
-        $('a[href^="#"]').on('click', function (e) {
+        $('.navbar-nav li a[href^="#"]').on('click', function (e) {
             e.preventDefault();
             $(document).off("scroll");
             
-            $('a').each(function () {
+            $('.navbar-nav li a').each(function () {
                 $(this).removeClass('active');
             })
             $(this).addClass('active');
@@ -16,7 +16,7 @@ $(document).ready(function () {
             $target = $(target);
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top+2
-            }, 500, 'swing', function () {
+            }, 2200, 'swing', function () {
                 window.location.hash = target;
                 $(document).on("scroll", onScroll);
             });

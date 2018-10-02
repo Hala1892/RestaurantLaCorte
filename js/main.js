@@ -1,12 +1,31 @@
 /* Page Preloader */
-$(window).load(function() {
+$(window).load(function () {
     $('#status').fadeOut();
     $('#preloader').delay(1).fadeOut('slow');
     $('body').delay(1).css({
         'overflow': 'visible'
     });
 })
+/* ---------------------------------------------- /*
+         * STICKY NAVBAR
+/* ---------------------------------------------- */
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
 
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset - 20 >= sticky) {
+    navbar.classList.add("navbar-color")
+  } else {
+    navbar.classList.remove("navbar-color")
+  }
+}
 /* ---------------------------------------------- /*
          * Background Slide show
 /* ---------------------------------------------- */
@@ -18,7 +37,7 @@ $('#home').superslides({
 /* ---------------------------------------------- /*
          * Lightbox
 /* ---------------------------------------------- */
-$(function() {
+$(function () {
     var gallery = $('#gallery a').simpleLightbox();
 });
 
@@ -36,7 +55,7 @@ $('#gallery').flexImages({
 google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
- 
+
     //If i need some more: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // Options
@@ -298,44 +317,44 @@ function init() {
 
     var mapElement = document.getElementById('map');
 
-var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 class="firstHeading">La Corte dei Mangioni</h1>'+
-      '<div id="bodyContent">'+
-            '<p>ж.к. Възраждане 1</p>'+
-      '<p>ул. "Здравко Чакъров" 9</p>'+
-      '<p>9020 Варна</p>'+
-      '<p>България</p>'+
-        '<p><a href="https://www.google.bg/maps/place/%D0%9F%D0%B8%D1%86%D0%B0%D1%80%D0%B8%D1%8F+%22La+Corte+dei+Mangioni%22+%D0%92%D1%8A%D0%B7%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D0%B5/@43.2380064,27.8735737,15z/data=!4m5!3m4!1s0x0:0x97def439563c8412!8m2!3d43.2378716!4d27.8735778">Преглед в Google Карти</a></p>'+
-      '</div>'+
-      '</div>';
+    var contentString = '<div id="content">' +
+        '<div id="siteNotice">' +
+        '</div>' +
+        '<h1 class="firstHeading">La Corte dei Mangioni</h1>' +
+        '<div id="bodyContent">' +
+        '<p>ж.к. Възраждане 1</p>' +
+        '<p>ул. "Здравко Чакъров" 9</p>' +
+        '<p>9020 Варна</p>' +
+        '<p>България</p>' +
+        '<p><a href="https://www.google.bg/maps/place/%D0%9F%D0%B8%D1%86%D0%B0%D1%80%D0%B8%D1%8F+%22La+Corte+dei+Mangioni%22+%D0%92%D1%8A%D0%B7%D1%80%D0%B0%D0%B6%D0%B4%D0%B0%D0%BD%D0%B5/@43.2380064,27.8735737,15z/data=!4m5!3m4!1s0x0:0x97def439563c8412!8m2!3d43.2378716!4d27.8735778">Преглед в Google Карти</a></p>' +
+        '</div>' +
+        '</div>';
 
-  var infowindow = new google.maps.InfoWindow({
-    content: contentString
-  });
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
 
     var map = new google.maps.Map(mapElement, mapOptions);
-// Google Marker
+    // Google Marker
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(43.2376697,27.8735113),
+        position: new google.maps.LatLng(43.2376697, 27.8735113),
         animation: google.maps.Animation.DROP,
         map: map,
         title: 'Ресторант - Пицария La Corte dei Mangioni',
         icon: 'images/map-icon.png',
     });
 
-      marker.addListener('click', toggleBounce);
+    marker.addListener('click', toggleBounce);
 
-      marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-  
-function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
-}
+    marker.addListener('click', function () {
+        infowindow.open(map, marker);
+    });
+
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
 }
