@@ -110,124 +110,51 @@ h2 {
 /* Social Icons */
 .social-icons {
     top: 42%;
-    left: -2.2%;
+    left: -210px;
+    border: 1px solid #C7C7C7;
+    border-right: 5px solid #24e244;
     z-index: 999;    
-    background: rgb(224, 224, 224);
+    background: #fff;
     position: fixed;    
     padding: 5px;
     transition: all 0.8s;
     border-radius: 4px;
-    opacity: 0.7;
+    opacity: 0.8;
+    cursor: pointer;
 }
-.social-icons:hover {
-    left:0%;   
+
+.social-icons:hover,.social-icons:active {
+    left:0%;
     opacity: 1;
     transition: all 0.8s;
 }
-.social-icons p {
-    display: none;
+.social-icons div {
+    padding: 5px;
+    padding-right: 25px;
 }
-.facebook a img {
-    width: 50px;
+.social-icons div:hover{
+    background-color: #e8e8e8;
 }
-.phone a img {
-    margin: 12px;
-    width: 30px;
+.social-icons div a{
+    color: #333;
+    font-weight: 600;
 }
-.delivery a img {
-    margin: 9px;
-    width: 35px;
-}
-.facebook {
-    color:#4267b2;
-    background-color: #fff;
-    width: 50px;
-    height: 50px;
-    border-radius: 4px;
-    margin-bottom: 10px;
+.social-icons div a:hover{
+    text-decoration:none;
 }
 
-.phone {
-    color:#fff;
-    background-color: rgb(9, 255, 83);
-    width: 50px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    height: 50px;
+.social-icons div a i{
+    width: 45px;
+    padding: 10px;
 }
-.delivery {
-    color:#4267b2;
-    background-color: rgb(255, 32, 32);
-    width: 50px;
-    height: 50px;
-    border-radius: 4px;
+.social-icons div a .fa-phone{
+    color: #24e244;
 }
-.facebook .tooltiptext {
-    font-family: 'Lato';
-    padding: 4px;
-    visibility: hidden;
-    width: 120px;
-    background-color: #fff;
-    color: #000;
-    text-align: center;
-    border-radius: 2px;
-    top: 53%;
-    border: 1px solid rgb(233, 233, 233);
-    left: 5%;
-    position: fixed;
-    z-index: 0;
-    opacity: 0;
-    transition: opacity 0.3s;
-    margin-left: 15px;
+.social-icons div a .fa-facebook-f{
+    color: #3b5998;
 }
-
-.facebook:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-.phone .tooltiptext {
-    font-family: 'Lato';
-    padding: 4px;
-    visibility: hidden;
-    width: 120px;
-    background-color: rgb(9, 255, 83);
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    top: 45%;
-    margin-left: 15px;
-    left: 5%;
-    position: fixed;
-    z-index: 0;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.phone:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-.delivery .tooltiptext {
-    font-family: 'Lato';
-    padding: 4px;
-    visibility: hidden;
-    width: 120px;
-    background-color: rgb(255, 32, 32);
-    margin-left: 15px;
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    top: 61%;
-    left: 5%;
-    position: fixed;
-    z-index: 0;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.delivery:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+.social-icons div a .fa-truck{
+    color: #ff2e23;
 }
 /* Navbar */
 .navbar {
@@ -385,12 +312,12 @@ font-size: 20px;
 #our-menu h2 {
     text-align: center;
     display: block;
+    color: #f3f3f3;
 }
 
 #our-menu {
     background: #161615 url(../images/barbeque-bg.jpg) no-repeat;
     padding: 50px 0;
-    color: #fff;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -401,78 +328,43 @@ font-size: 20px;
     text-transform: uppercase;
     text-align: center;
 }
-
 .menu-tabs {
-    border-bottom: 2px solid #DDD;
-    margin: 0 0 40px 0;
-    text-transform: uppercase;
-    font-weight: 500;
-    border-bottom: none;
-    text-align: center;
+    text-align:center;
+    list-style: none;
+    padding: 15px 0px;
 }
-
-.menu-tabs > li > a {
-    border: none;
-    color: #666;
-    transition: all 0.5s;        
-}
-
-.menu-tabs > li.active > a,
-.menu-tabs > li > a:hover {
-    border: none;
-    color: #fff !important;
-    background: transparent;
-}
-
-.menu-tabs > li > a::after {
-    content: "";
-    background: #fff;
-    height: 2px;
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    bottom: -1px;
-    transition: all 250ms ease 0s;
-    transform: scale(0);
-}
-
-.menu-tabs > li.active > a::after,
-.menu-tabs > li:hover > a::after {
-    transform: scale(1);
-}
-
-.menu-tabs li,
-.menu-tabs li a {
-    display: inline-block;
-    transition: all 0.5s;        
-}
-
 .menu-tabs li {
-    float: none;
+    display:inline-block;
+    padding: 10px;
+    margin: 0px 10px;
 }
-
-.menu-tabs>li.active>a,
-.menu-tabs>li.active>a:hover,
-.menu-tabs>li.active>a:focus {
-    background: none;
-    color: #fff;
+.menu-tabs li:hover {
+    border-bottom: 2px solid #f3f3f3;
 }
-
-.menu-tabs li a {
-    color: #D2D2D2;
-    border-radius: 0;
-    display: inline-block;
-    margin: 0 6px;
+.menu-tabs .active {
+    border: 2px solid #f3f3f3;
+    background-color:none;
 }
-
+.menu-tabs li a{
+    color: #f3f3f3;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.menu-tabs li a:hover,.menu-tabs li a:focus,.menu-tabs li a:target,.menu-tabs li a:checked{
+    text-decoration: none;
+}
 .menu-group-item {
+    font-family: 'Roboto';
     margin-bottom: 20px;
-    transition: all 0.5s;        
+    transition: all 0.5s;  
+    color: #f3f3f3;
+    font-weight: 900;
 }
 
 .menu-item-price {
     font-size: 20px;
     font-weight: 600;
+    color: #f3f3f3;
 }
 
 .menu-title {
@@ -492,14 +384,14 @@ font-size: 20px;
     color: gray;
     font-family: 'Roboto', "Helvetica Neue",Helvetica,Arial,sans-serif;
 font-size: 15px;   
-padding: 0px !important;
 margin: 0px !important ;
+border: 1px dashed #dadada;
+padding: 15px;
 }
 .hidden-xs img {
     width: 100px;
     height: 100px;
 }
-
 .menudownload:hover {
     text-decoration: none;
     color: white;
@@ -551,7 +443,7 @@ figure.item:hover img {
     padding: 20px 0;
     background: #fff;
     color: #fff;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto';
 }
 
 #promos h2 {
@@ -561,9 +453,10 @@ figure.item:hover img {
 }
 
 .post {
-    height: 350px;
+    height: 100% !important;
+    padding: 15px;
     border: 1px solid #dadada;
-    background:#f3f3f3;
+    background-color:#f3f3f3;
     margin-bottom: 25px;
     transition: all 0.6s;    
     text-align:center;
@@ -590,6 +483,7 @@ figure.item:hover img {
 
 .post .content {
     margin-top: 20px;
+    height: 100%;
 }
 
 .post .content h4 a{
@@ -665,17 +559,7 @@ footer p:last-child{
 
 
 @media only screen and (max-width: 768px)  {
-    .social-icons {
-        top: 75%;
-        left: -8%;
-        z-index: 999;    
-        background: rgb(224, 224, 224);
-        position: fixed;    
-        padding: 20px;
-        transition: all 0.8s;
-        border-radius: 4px;
-        opacity: 0.7;
-    }
+
    .contact-details{
     position:static;
     margin:0 0 30px 0;
@@ -733,42 +617,7 @@ footer p:last-child{
          .post {
              height: 350px;
          }
-         .social-icons {
-            top: 0%;
-            left: 55%;
-            z-index: 999;    
-            background: rgb(224, 224, 224);
-            position: fixed;    
-            padding: 2px;
-            transition: all 0.5s;
-            border-radius: 4px;
-            opacity: 0.7;
-            padding-bottom: 5px;
-        }
-        .social-icons:hover {
-            left: 50%;
-            top:10%;   
-            opacity: 1;
-            padding-bottom: 0px;
-            transition: all 0.5s;
-        }
-        .social-icons p {
-            display: block;
-            font-family: Lato;
-            color: #000;
-            font-size: 20px;
-            text-align: center;
-        }
-        .facebook {
-            display: inline-block;
-        }
-        
-        .phone {
-            display: inline-block;
-        }
-        .delivery {
-            display: inline-block;
-        }
+
      }
 @media only screen and (max-width: 360px)  {
    .close-btn{
